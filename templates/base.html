@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css')}}"> <!-- do the same to javascript files -->
+     <!-- the blocks are the jinja 2 format -->
+    <!-- we are gonna insert our code in this block this file acts as our skeleton(template) -->
+    {% block head %}{% endblock %}
+</head>
+<body>
+    <center>
+        {% block body %}{% endblock %}
+    </center>
+</body>
+</html>
